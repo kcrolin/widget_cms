@@ -1,6 +1,8 @@
 * {margin:0;
-padding:25px;}
+padding:0px;}
 
+
+ul,li {list-style-type:none;}
 .page-header {text-decoration:bold;}
 .page-title {color: #0066FF;}
 .page-body {max-width:500px;
