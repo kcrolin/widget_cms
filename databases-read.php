@@ -21,16 +21,21 @@ $subject = mysqli_fetch_row($result);
 <head>
 <meta charset="UTF-8">
 <title>Databases</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
+<pre>
+<li><a href="databases-create.php">Lisa uus</a></li>
 <?php
-while ($subject = mysqli_fetch_array($result)) {
-echo '
-<ul>
-	<li>'. $subject['menu_name'] .'</li>
-</ul>' ;}?>
+while($row = mysqli_fetch_assoc($result)){ ?>
+<ul><h2><li class="page-title"><?php echo $row['menu_name'];?></li></h2></ul>
+<a href="databases-update.php?id=<?php echo $row['id'];?>">Muuda</a><br>
+<a href="databases-delete.php?id=<?php echo $row['id'];?>">Kustuta</a>
+<?php }?>
+<?php mysqli_free_result($result);?>
+
+</pre>
 </body>
 </html>
 <?php mysqli_close($connect); ?>

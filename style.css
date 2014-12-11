@@ -1,10 +1,35 @@
-* {margin:0;
-padding:0px;}
+* {margin:0;}
 
+body {background: url('swirl_pattern/swirl_pattern.png');}
 
-ul,li {list-style-type:none;}
-.page-header {text-decoration:bold;}
-.page-title {color: #0066FF;}
-.page-body {max-width:500px;
-background-color: #0066FF;
-color: #fff;}
+.container {
+max-width:1110px;
+min-height:300px;
+margin:0 auto;
+background:#fff;}
+
+header {
+height:60px;
+padding-top:30px;
+width:1110;
+background:#c0392b;}
+
+.sisu {
+margin:0 auto;
+padding:10px;
+width:1000px;}
+
+.edit {margin-top:20px;}
+
+.edit a {
+color:#c0392b;}
+
+ul li {
+list-style-type:none;
+display: inline-block;
+margin:6px;
+font-family: 'Yanone Kaffeesatz', sans-serif;}
+ 
+a {
+text-decoration:none;
+color:#fff;}
